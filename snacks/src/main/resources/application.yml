@@ -1,13 +1,11 @@
+---
 spring:
-  application:
-    name: snacks
-  cloud:
-    config:
-      uri: http://localhost:8888
-      
+  profiles: dev
+
+security:
+  basic:
+    enabled: false
+
 management:
   security:
     enabled: false
-    
-server:
-  port: 9999
