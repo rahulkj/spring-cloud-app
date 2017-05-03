@@ -1,0 +1,12 @@
+applications:
+- name: snacks
+  instances: 1
+  memory: 512M
+  disk_quota: 512M
+  routes:
+  - route: snacks.local.pcfdev.io
+  env:
+    SPRING_PROFILES_ACTIVE: dev
+  services:
+  - config-service
+  stack: cflinuxfs2
