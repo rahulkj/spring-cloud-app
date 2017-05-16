@@ -5,8 +5,6 @@ applications:
   disk_quota: 512M
   path: target/coffee-0.0.1-SNAPSHOT.jar
   buildpack: java_buildpack
-  routes:
-  - route: coffee.local.pcfdev.io
   env:
     SPRING_PROFILES_ACTIVE: dev
   services:
