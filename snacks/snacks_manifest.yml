@@ -1,10 +1,12 @@
 applications:
 - name: snacks
   instances: 1
-  memory: 512M
-  disk_quota: 512M
+  memory: 1G
+  disk_quota: 1G
+  path: target/snacks-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack_offline
   env:
     SPRING_PROFILES_ACTIVE: dev
   services:
-  - config-service
-  stack: cflinuxfs2
+  - config-server
+  stack: cflinuxfs4

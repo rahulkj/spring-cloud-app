@@ -1,6 +1,10 @@
 ---
 spring:
-  profiles: dev
+  application:
+    name: coffee
+  config:
+    activate:
+      on-profile: dev
   cloud:
       services:
         registrationMethod: route
